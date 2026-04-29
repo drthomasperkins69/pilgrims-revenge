@@ -1,5 +1,4 @@
 // Pilgrims Revenge — site JS
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // Mobile nav toggle
@@ -12,22 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Header shadow on scroll
-  const header = document.querySelector('.site-header');
+  // Header sticky shadow on scroll
+  const header = document.getElementById('header');
   if (header) {
-    const onScroll = () => {
-      if (window.scrollY > 20) {
-        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.25)';
-      } else {
-        header.style.boxShadow = 'none';
-      }
-    };
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 12);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
   }
 
   // Reveal on scroll
-  const revealEls = document.querySelectorAll('.service-card, .fleet-item, .process-step, .contact-info-block, .split-content, .split-image, .service-detail');
+  const revealEls = document.querySelectorAll('.service-card, .fleet-item, .process-step, .testimonial, .contact-info-block, .split-content, .split-image, .service-detail, .gallery-item');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
@@ -36,14 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
           io.unobserve(e.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.10 });
     revealEls.forEach(el => {
       el.style.opacity = '0';
       io.observe(el);
     });
   }
 
-  // Contact form (no real backend; show friendly confirmation)
+  // Contact form (front-end only confirmation)
   const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
@@ -57,6 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
     });
   }
+
+  // Mark current page in nav
+  const path = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.getAttribute('href') === path) a.classList.add('active');
+  });
 
   // Year in footer
   const y = document.getElementById('year');

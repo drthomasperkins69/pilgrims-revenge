@@ -5,22 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pilgrims Revenge — Premium Boat Services | Brisbane &amp; Gold Coast</title>
 <meta name="description" content="Premium marine services for vessels of every size. Engine maintenance, electrical, structural &amp; hull repairs and full project management — operating from Coomera Marina, servicing Brisbane and the Gold Coast.">
+<meta name="theme-color" content="#0b2545">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
 
 <!-- ===== HEADER ===== -->
-<header class="site-header">
+<header class="site-header" id="header">
   <nav class="nav">
     <a href="index.html" class="brand">
       <svg class="brand-mark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="30" cy="30" r="28" fill="none" stroke="#f5c518" stroke-width="2"/>
-        <path d="M30 12 L30 48 M22 18 L38 18 M18 38 Q30 50 42 38" stroke="#f5c518" stroke-width="3" stroke-linecap="round" fill="none"/>
-        <circle cx="30" cy="14" r="3" fill="#f5c518"/>
+        <rect width="60" height="60" rx="10" fill="#0b2545"/>
+        <circle cx="30" cy="30" r="22" fill="none" stroke="#ffc933" stroke-width="2.4"/>
+        <path d="M30 14 L30 46 M22 20 L38 20 M19 38 Q30 50 41 38" stroke="#ffc933" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <circle cx="30" cy="15" r="3" fill="#ffc933"/>
       </svg>
       <span class="brand-text">
         Pilgrims Revenge
@@ -29,95 +31,73 @@
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html" class="btn btn-primary" style="padding: 10px 20px;">Request Quote</a></li>
+      <li><a href="contact.html" class="btn btn-primary btn-sm">Request Quote</a></li>
     </ul>
   </nav>
 </header>
 
 <!-- ===== HERO ===== -->
 <section class="hero">
-  <div class="container hero-inner">
-    <span class="eyebrow">Coomera Marina · Brisbane · Gold Coast</span>
-    <h1>Premium Marine Care, <span class="accent">End to End.</span></h1>
-    <p class="hero-tagline">Bringing every vessel home in better shape than she left.</p>
-    <p class="hero-subtitle">From compact runabouts to ocean-going superyachts, Pilgrims Revenge delivers full-service engine, electrical, structural and project work — all run from our Coomera Marina base.</p>
-    <div class="hero-buttons">
-      <a href="contact.html" class="btn btn-primary">Book a Survey</a>
-      <a href="services.html" class="btn btn-outline">Explore Services</a>
-    </div>
-    <div class="hero-stats">
-      <div>
-        <div class="stat-num">25+</div>
-        <div class="stat-label">Years on the water</div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow">Coomera Marina · Brisbane · Gold Coast</span>
+        <h1>Premium marine care, <span class="accent">end to end.</span></h1>
+        <p class="hero-tagline">From compact runabouts to ocean-going superyachts — engine, electrical, structural and project work, all run from our Coomera Marina base.</p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary">Book a Survey <span class="arrow">→</span></a>
+          <a href="services.html" class="btn btn-ghost">Our Services</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">25+</div>
+            <div class="stat-label">Years on the water</div>
+          </div>
+          <div>
+            <div class="stat-num">100%</div>
+            <div class="stat-label">In-house technicians</div>
+          </div>
+          <div>
+            <div class="stat-num">Any size</div>
+            <div class="stat-label">Tender to superyacht</div>
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="stat-num">100%</div>
-        <div class="stat-label">In-house technicians</div>
-      </div>
-      <div>
-        <div class="stat-num">All</div>
-        <div class="stat-label">Sizes &amp; classes</div>
+      <div class="hero-image">
+        <img src="images/hero.jpg" alt="Luxury motor yacht at the marina" loading="eager">
+        <div class="hero-floating">
+          <div class="icon">⚓</div>
+          <div class="hero-floating-text">
+            <strong>Coomera Marina HQ</strong>
+            <span>Lift, slip &amp; refit on one site</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <svg class="hero-boat" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <!-- Stylised boat silhouette -->
-    <defs>
-      <linearGradient id="hull" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#f5c518" stop-opacity="0.9"/>
-        <stop offset="100%" stop-color="#d4a017" stop-opacity="0.7"/>
-      </linearGradient>
-    </defs>
-    <!-- Mast and rigging -->
-    <line x1="300" y1="40" x2="300" y2="240" stroke="#f5c518" stroke-width="3"/>
-    <line x1="300" y1="60" x2="200" y2="240" stroke="#f5c518" stroke-width="2" opacity="0.6"/>
-    <line x1="300" y1="60" x2="400" y2="240" stroke="#f5c518" stroke-width="2" opacity="0.6"/>
-    <!-- Sails -->
-    <path d="M300 60 L300 230 L210 230 Z" fill="#f5c518" opacity="0.25"/>
-    <path d="M300 80 L300 230 L385 230 Z" fill="#f5c518" opacity="0.18"/>
-    <!-- Hull -->
-    <path d="M120 250 Q300 290 480 250 L450 320 Q300 350 150 320 Z" fill="url(#hull)"/>
-    <!-- Deck line -->
-    <line x1="135" y1="262" x2="465" y2="262" stroke="#0a1f3d" stroke-width="2" opacity="0.4"/>
-    <!-- Pennant -->
-    <path d="M300 40 L325 50 L300 60 Z" fill="#f5c518"/>
-    <!-- Water -->
-    <path d="M0 340 Q150 360 300 340 T600 340 L600 400 L0 400 Z" fill="#f5c518" opacity="0.08"/>
-    <path d="M0 360 Q150 380 300 360 T600 360 L600 400 L0 400 Z" fill="#f5c518" opacity="0.05"/>
-  </svg>
 </section>
 
-<!-- ===== TRUST STRIP ===== -->
-<div class="trust-strip">
+<!-- ===== PARTNERS / BRANDS ===== -->
+<section class="partners">
   <div class="container">
-    <div class="trust-strip-inner">
-      <div class="trust-item">
-        <div class="icon">⚓</div>
-        <h4>Coomera Marina Based</h4>
-        <p>Hardstand, slipway, undercover bays</p>
-      </div>
-      <div class="trust-item">
-        <div class="icon">🔧</div>
-        <h4>Factory-Trained Crew</h4>
-        <p>Mercury, Volvo, Cummins, Yanmar</p>
-      </div>
-      <div class="trust-item">
-        <div class="icon">🛡️</div>
-        <h4>Insurance Approved</h4>
-        <p>Survey, repair &amp; certify</p>
-      </div>
-      <div class="trust-item">
-        <div class="icon">⚙️</div>
-        <h4>End-to-End Service</h4>
-        <p>From mechanical to refit</p>
+    <div class="partners-inner">
+      <div class="label">Factory-Trained On</div>
+      <div class="partners-list">
+        <span>Mercury</span>
+        <span>Volvo Penta</span>
+        <span>Cummins</span>
+        <span>Yanmar</span>
+        <span>Yamaha</span>
+        <span>Caterpillar</span>
+        <span>MAN</span>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- ===== SERVICES ===== -->
 <section id="services">
@@ -125,98 +105,77 @@
     <div class="section-header">
       <span class="eyebrow">What We Do</span>
       <h2>Four trades. One trusted crew.</h2>
-      <p>Whether you need a routine service, a full electrical refit or a complex structural rebuild, our specialists deliver to commercial standard with private-yacht finish.</p>
+      <p>Routine service, full electrical refit, complex structural rebuild — delivered to commercial standard with private-yacht finish.</p>
     </div>
     <div class="services-grid">
       <div class="service-card">
-        <div class="service-icon">⚙️</div>
-        <h3>Engine Maintenance &amp; Repairs</h3>
-        <p>Servicing, diagnostics, rebuilds and repowers — inboard, outboard, sterndrive and shaft drive. Diesel and petrol, single and twin.</p>
-        <a href="services.html#engine">Learn more →</a>
+        <div class="service-card-image">
+          <img src="images/engine.jpg" alt="Marine engine maintenance" loading="lazy">
+          <span class="num">01</span>
+        </div>
+        <div class="service-card-body">
+          <h3>Engine Maintenance &amp; Repairs</h3>
+          <p>Service, diagnostics, rebuilds and repowers — inboard, outboard, sterndrive and shaft drive. Diesel and petrol, single and twin.</p>
+          <a href="services.html#engine">Learn more <span class="arrow">→</span></a>
+        </div>
       </div>
       <div class="service-card">
-        <div class="service-icon">⚡</div>
-        <h3>Marine Electrical</h3>
-        <p>Wiring, switchboards, lithium &amp; AGM banks, inverters, navigation, comms and shore-power. ABYC and AS/NZS 3004 compliant.</p>
-        <a href="services.html#electrical">Learn more →</a>
+        <div class="service-card-image">
+          <img src="images/electrical.jpg" alt="Marine electrical switchboard" loading="lazy">
+          <span class="num">02</span>
+        </div>
+        <div class="service-card-body">
+          <h3>Marine Electrical</h3>
+          <p>Wiring, switchboards, lithium &amp; AGM banks, inverters, navigation, comms and shore-power. ABYC and AS/NZS 3004 compliant.</p>
+          <a href="services.html#electrical">Learn more <span class="arrow">→</span></a>
+        </div>
       </div>
       <div class="service-card">
-        <div class="service-icon">🛠️</div>
-        <h3>Structural &amp; Hull Repairs</h3>
-        <p>Fibreglass, gelcoat, osmosis, antifoul, keel and rudder repair, deck recore, fairing and topcoats. Survey grade workmanship.</p>
-        <a href="services.html#structural">Learn more →</a>
+        <div class="service-card-image">
+          <img src="images/hull.jpg" alt="Hull and structural repair" loading="lazy">
+          <span class="num">03</span>
+        </div>
+        <div class="service-card-body">
+          <h3>Structural &amp; Hull Repairs</h3>
+          <p>Fibreglass, gelcoat, osmosis, antifoul, keel and rudder repair, deck recore, fairing and topcoats. Survey-grade workmanship.</p>
+          <a href="services.html#structural">Learn more <span class="arrow">→</span></a>
+        </div>
       </div>
       <div class="service-card">
-        <div class="service-icon">📋</div>
-        <h3>Project Management</h3>
-        <p>One point of contact for refits, restorations and new commissioning — scopes, suppliers, slipway bookings and sea trials handled.</p>
-        <a href="services.html#project">Learn more →</a>
+        <div class="service-card-image">
+          <img src="images/project.jpg" alt="Project management on a yacht" loading="lazy">
+          <span class="num">04</span>
+        </div>
+        <div class="service-card-body">
+          <h3>Project Management</h3>
+          <p>One contact for refits, restorations and new commissioning — scopes, suppliers, slipway bookings and sea trials handled.</p>
+          <a href="services.html#project">Learn more <span class="arrow">→</span></a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ===== MARINA / ABOUT ===== -->
-<section class="marina-section">
+<section class="split-section tinted" id="marina">
   <div class="container">
     <div class="split">
+      <div class="split-image">
+        <img src="images/marina.jpg" alt="Coomera Marina aerial view" loading="lazy">
+        <div class="badge">⚓ Coomera Marina</div>
+      </div>
       <div class="split-content">
         <span class="eyebrow">Our Home Port</span>
         <h2>Operating from Coomera Marina.</h2>
-        <p>Coomera Marina is the largest dry-berth and refit facility on the Gold Coast — and it's where we work, every day. That gives us direct access to slipways, hardstand, travel lifts, undercover bays and a network of specialist trades all on one site.</p>
+        <p>Coomera Marina is one of the largest dry-berth and refit facilities on the Gold Coast — and it's where we work, every day. That gives us direct access to slipways, hardstand, travel lifts, undercover bays and a network of specialist trades all on one site.</p>
         <p>For owners in Brisbane, the Broadwater or up the Coomera River, that means one gate, one team, one bill — and your boat back in the water on schedule.</p>
         <ul class="feature-list">
-          <li>Up to 70-tonne travel lift access</li>
+          <li>Travel lift access for vessels up to 70 tonnes</li>
           <li>Undercover and air-conditioned refit bays</li>
           <li>Direct waterway access — no road transport needed</li>
           <li>Secure 24/7 berthing during works</li>
         </ul>
-        <a href="about.html" class="btn btn-navy">More About Us</a>
-      </div>
-      <div class="split-image">
-        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" style="background: linear-gradient(180deg, #87ceeb 0%, #4a90b8 60%, #2c5282 100%);">
-          <!-- Sky -->
-          <circle cx="500" cy="80" r="40" fill="#fff5cc" opacity="0.6"/>
-          <!-- Distant mountains -->
-          <path d="M0 200 L80 160 L180 200 L260 150 L380 200 L460 170 L600 200 L600 250 L0 250 Z" fill="#1e3a6e" opacity="0.5"/>
-          <!-- Marina jetty -->
-          <rect x="0" y="280" width="600" height="20" fill="#8b6f47"/>
-          <rect x="100" y="240" width="6" height="60" fill="#5a4a30"/>
-          <rect x="200" y="240" width="6" height="60" fill="#5a4a30"/>
-          <rect x="300" y="240" width="6" height="60" fill="#5a4a30"/>
-          <rect x="400" y="240" width="6" height="60" fill="#5a4a30"/>
-          <rect x="500" y="240" width="6" height="60" fill="#5a4a30"/>
-          <!-- Boats at jetty -->
-          <g>
-            <rect x="80" y="265" width="60" height="20" fill="#ffffff"/>
-            <path d="M80 265 L60 285 L140 285 L120 265 Z" fill="#ffffff"/>
-            <line x1="110" y1="240" x2="110" y2="265" stroke="#0a1f3d" stroke-width="2"/>
-          </g>
-          <g>
-            <rect x="180" y="270" width="80" height="18" fill="#f5c518"/>
-            <path d="M180 270 L160 288 L260 288 L240 270 Z" fill="#f5c518"/>
-            <line x1="220" y1="245" x2="220" y2="270" stroke="#0a1f3d" stroke-width="2"/>
-          </g>
-          <g>
-            <rect x="290" y="263" width="100" height="22" fill="#ffffff"/>
-            <path d="M290 263 L270 285 L390 285 L370 263 Z" fill="#ffffff"/>
-            <line x1="340" y1="230" x2="340" y2="263" stroke="#0a1f3d" stroke-width="2"/>
-            <path d="M340 235 L340 263 L320 263 Z" fill="#ffffff" opacity="0.7"/>
-          </g>
-          <g>
-            <rect x="430" y="270" width="70" height="18" fill="#f5c518"/>
-            <path d="M430 270 L410 288 L500 288 L480 270 Z" fill="#f5c518"/>
-          </g>
-          <!-- Water -->
-          <path d="M0 300 Q150 320 300 300 T600 300 L600 450 L0 450 Z" fill="#1e3a6e"/>
-          <path d="M0 320 Q150 340 300 320 T600 320 L600 450 L0 450 Z" fill="#142850" opacity="0.6"/>
-          <path d="M0 350 Q150 370 300 350 T600 350 L600 450 L0 450 Z" fill="#0a1f3d"/>
-          <!-- Reflections -->
-          <line x1="110" y1="310" x2="110" y2="340" stroke="#f5c518" stroke-width="1" opacity="0.3"/>
-          <line x1="220" y1="310" x2="220" y2="340" stroke="#f5c518" stroke-width="1" opacity="0.3"/>
-          <line x1="340" y1="310" x2="340" y2="340" stroke="#f5c518" stroke-width="1" opacity="0.3"/>
-        </svg>
-        <div class="badge">⚓ Coomera Marina</div>
+        <a href="about.html" class="btn btn-primary">More About Us <span class="arrow">→</span></a>
       </div>
     </div>
   </div>
@@ -228,28 +187,28 @@
     <div class="section-header">
       <span class="eyebrow">How It Works</span>
       <h2>A simple, predictable process.</h2>
-      <p>No surprises, no scope creep. Just clear scope, fair pricing and a finish you can be proud of.</p>
+      <p>No surprises, no scope creep — just clear scope, fair pricing and a finish you can be proud of.</p>
     </div>
     <div class="process-grid">
       <div class="process-step">
-        <div class="process-num">01</div>
+        <div class="process-num">STEP 01</div>
         <h4>Survey &amp; Scope</h4>
         <p>We come aboard, document the work, photograph everything and write you a fixed-price proposal.</p>
       </div>
       <div class="process-step">
-        <div class="process-num">02</div>
+        <div class="process-num">STEP 02</div>
         <h4>Schedule &amp; Slip</h4>
         <p>We book your slipway, lift and bay at Coomera Marina around your boating calendar.</p>
       </div>
       <div class="process-step">
-        <div class="process-num">03</div>
+        <div class="process-num">STEP 03</div>
         <h4>Execute</h4>
         <p>Daily updates, photos and milestone sign-off. One project manager, accountable to you.</p>
       </div>
       <div class="process-step">
-        <div class="process-num">04</div>
+        <div class="process-num">STEP 04</div>
         <h4>Sea Trial &amp; Handover</h4>
-        <p>Commissioning, sea trial, full handover pack and aftercare warranty before she's signed off.</p>
+        <p>Commissioning, sea trial, full handover pack and aftercare warranty before sign-off.</p>
       </div>
     </div>
   </div>
@@ -265,7 +224,7 @@
     </div>
     <div class="fleet-grid">
       <div class="fleet-item">
-        <span class="size">&lt; 12m</span>
+        <span class="size">&lt;&nbsp;12m</span>
         <h3>Trailer Boats &amp; Tenders</h3>
         <p>Servicing, repower, gel coat refresh, electronics and trailer-recovery work.</p>
       </div>
@@ -283,15 +242,80 @@
   </div>
 </section>
 
-<!-- ===== CTA ===== -->
-<section class="cta-section">
+<!-- ===== GALLERY ===== -->
+<section style="padding: 80px 0; background: var(--bg-soft);">
   <div class="container">
-    <span class="eyebrow" style="color: var(--yellow);">Get In Touch</span>
-    <h2>Whatever the trade — talk to us first.</h2>
-    <p>Send us your vessel details and a few words about the work. We'll come back same-day with a survey time.</p>
-    <div class="cta-buttons">
-      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
-      <a href="tel:+61755000000" class="btn btn-outline">Call (07) 5500 0000</a>
+    <div class="section-header">
+      <span class="eyebrow">In the Yard</span>
+      <h2>What we do, every day.</h2>
+    </div>
+    <div class="gallery">
+      <div class="gallery-item tall"><img src="images/marina.jpg" alt="Marina aerial" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/workshop.jpg" alt="Workshop interior" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/hull.jpg" alt="Hull repair" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/team.jpg" alt="Marine team" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/detail.jpg" alt="Yacht detail" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/engine.jpg" alt="Engine bay" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Owner Feedback</span>
+      <h2>Words from the dock.</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="quote-mark">"</div>
+        <p>Booked them for a routine service and ended up handing over the whole refit. Photos every Friday, on the date they promised, no nonsense.</p>
+        <div class="testimonial-author">
+          <div class="avatar">MR</div>
+          <div>
+            <div class="name">Mark R.</div>
+            <div class="vessel">Riviera 5400 Sport Yacht</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="quote-mark">"</div>
+        <p>Engine room looked better when we picked her up than the day she was launched. Thorough crew — they actually care.</p>
+        <div class="testimonial-author">
+          <div class="avatar">SC</div>
+          <div>
+            <div class="name">Sarah C.</div>
+            <div class="vessel">Maritimo M55</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="quote-mark">"</div>
+        <p>Insurance survey job, tight timeline. They scoped it Tuesday, slipped Thursday, back in the water 11 days later. Top tradesmen.</p>
+        <div class="testimonial-author">
+          <div class="avatar">DJ</div>
+          <div>
+            <div class="name">Dave J.</div>
+            <div class="vessel">Princess V60</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner">
+      <span class="eyebrow" style="color: var(--yellow);">Get In Touch</span>
+      <h2>Whatever the trade — talk to us first.</h2>
+      <p>Send us your vessel details and a few words about the work. We come back same-day with a survey time.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-yellow">Request a Quote <span class="arrow">→</span></a>
+        <a href="tel:+61755000000" class="btn btn-on-dark">Call (07) 5500 0000</a>
+      </div>
     </div>
   </div>
 </section>
@@ -303,9 +327,10 @@
       <div class="footer-brand">
         <a href="index.html" class="brand">
           <svg class="brand-mark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="30" cy="30" r="28" fill="none" stroke="#f5c518" stroke-width="2"/>
-            <path d="M30 12 L30 48 M22 18 L38 18 M18 38 Q30 50 42 38" stroke="#f5c518" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <circle cx="30" cy="14" r="3" fill="#f5c518"/>
+            <rect width="60" height="60" rx="10" fill="#0b2545"/>
+            <circle cx="30" cy="30" r="22" fill="none" stroke="#ffc933" stroke-width="2.4"/>
+            <path d="M30 14 L30 46 M22 20 L38 20 M19 38 Q30 50 41 38" stroke="#ffc933" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <circle cx="30" cy="15" r="3" fill="#ffc933"/>
           </svg>
           <span class="brand-text">Pilgrims Revenge<small>Premium Boat Services</small></span>
         </a>

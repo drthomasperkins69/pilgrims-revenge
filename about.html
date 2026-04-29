@@ -5,21 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Pilgrims Revenge Marine</title>
 <meta name="description" content="Independent, owner-operated marine services with a permanent home at Coomera Marina, serving Brisbane and the Gold Coast.">
+<meta name="theme-color" content="#0b2545">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header" id="header">
   <nav class="nav">
     <a href="index.html" class="brand">
       <svg class="brand-mark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="30" cy="30" r="28" fill="none" stroke="#f5c518" stroke-width="2"/>
-        <path d="M30 12 L30 48 M22 18 L38 18 M18 38 Q30 50 42 38" stroke="#f5c518" stroke-width="3" stroke-linecap="round" fill="none"/>
-        <circle cx="30" cy="14" r="3" fill="#f5c518"/>
+        <rect width="60" height="60" rx="10" fill="#0b2545"/>
+        <circle cx="30" cy="30" r="22" fill="none" stroke="#ffc933" stroke-width="2.4"/>
+        <path d="M30 14 L30 46 M22 20 L38 20 M19 38 Q30 50 41 38" stroke="#ffc933" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <circle cx="30" cy="15" r="3" fill="#ffc933"/>
       </svg>
       <span class="brand-text">Pilgrims Revenge<small>Premium Boat Services</small></span>
     </a>
@@ -27,22 +29,22 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.html" class="active">About</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html" class="btn btn-primary" style="padding: 10px 20px;">Request Quote</a></li>
+      <li><a href="contact.html" class="btn btn-primary btn-sm">Request Quote</a></li>
     </ul>
   </nav>
 </header>
 
 <section class="page-hero">
   <div class="container">
-    <span class="eyebrow" style="color: var(--yellow);">About Us</span>
+    <span class="eyebrow">About Us</span>
     <h1>A premium crew, with a Queensland accent.</h1>
     <p>Independent, owner-operated and unapologetic about quality — we look after boats the way we'd want our own looked after.</p>
   </div>
 </section>
 
-<section>
+<section class="split-section">
   <div class="container">
     <div class="split">
       <div class="split-content">
@@ -51,36 +53,23 @@
         <p>Pilgrims Revenge was founded by working marine tradesmen who got tired of seeing owners shuffled between yards, blamed by sub-contractors, and handed bills they didn't understand. We do it differently.</p>
         <p>Every job has a single project lead. Every quote is itemised. Every photo, invoice and warranty card lives in one shared file. And every vessel — tender, cruiser or superyacht — gets the same standard of work.</p>
         <p>From quick-turn services up the Coomera River to multi-month refits at the marina, we keep the same simple promise: we treat your boat like we'd treat ours.</p>
-        <a href="contact.html" class="btn btn-navy">Get In Touch</a>
+        <a href="contact.html" class="btn btn-primary">Get In Touch <span class="arrow">→</span></a>
       </div>
       <div class="split-image">
-        <svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" style="background: linear-gradient(180deg, #ffd700 0%, #f5c518 100%); width: 100%; height: 100%;">
-          <!-- Anchor -->
-          <g stroke="#0a1f3d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
-            <line x1="300" y1="100" x2="300" y2="380"/>
-            <circle cx="300" cy="90" r="22"/>
-            <line x1="240" y1="170" x2="360" y2="170"/>
-            <path d="M180 350 Q160 400 220 410 Q280 410 300 380"/>
-            <path d="M420 350 Q440 400 380 410 Q320 410 300 380"/>
-            <path d="M170 360 L155 340 M170 360 L165 380"/>
-            <path d="M430 360 L445 340 M430 360 L435 380"/>
-          </g>
-          <!-- Rope detail -->
-          <circle cx="300" cy="90" r="22" fill="none" stroke="#0a1f3d" stroke-width="3" stroke-dasharray="4,4"/>
-        </svg>
+        <img src="images/team.jpg" alt="Pilgrims Revenge marine team">
         <div class="badge">Independent · Owner-led</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="marina-section" id="marina">
+<section class="split-section tinted" id="marina">
   <div class="container">
-    <div class="split">
+    <div class="split reverse">
       <div class="split-content">
         <span class="eyebrow">Coomera Marina</span>
         <h2>The biggest refit yard on the Gold Coast.</h2>
-        <p>Coomera Marina is the largest dry-storage and repair facility in the southern hemisphere — over 600 hardstand bays, slipways, travel-lifts and a full network of marine trades all on a single site.</p>
+        <p>Coomera Marina is one of the largest dry-storage and repair facilities in the southern hemisphere — over 600 hardstand bays, slipways, travel lifts and a full network of marine trades all on a single site.</p>
         <p>We're integrated into the marina, which means we don't sub-contract the haul-out, the bay or the slipway — we book it through our standing arrangement and run the job ourselves. That cuts handover time, removes finger-pointing and keeps your boat in one set of hands.</p>
         <ul class="feature-list">
           <li>Direct waterway access from Brisbane &amp; Broadwater</li>
@@ -92,46 +81,26 @@
         </ul>
       </div>
       <div class="split-image">
-        <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" style="background: linear-gradient(180deg, #87ceeb 0%, #4a90b8 60%, #1e3a6e 100%); width: 100%; height: 100%;">
-          <!-- Sun -->
-          <circle cx="120" cy="80" r="35" fill="#fff5cc" opacity="0.7"/>
-          <!-- Boatshed -->
-          <rect x="50" y="180" width="180" height="100" fill="#142850"/>
-          <path d="M50 180 L140 130 L230 180 Z" fill="#0a1f3d"/>
-          <rect x="120" y="220" width="40" height="60" fill="#f5c518"/>
-          <line x1="70" y1="200" x2="220" y2="200" stroke="#f5c518" stroke-width="1" opacity="0.5"/>
-          <line x1="70" y1="220" x2="220" y2="220" stroke="#f5c518" stroke-width="1" opacity="0.5"/>
-          <line x1="70" y1="240" x2="220" y2="240" stroke="#f5c518" stroke-width="1" opacity="0.5"/>
-          <line x1="70" y1="260" x2="220" y2="260" stroke="#f5c518" stroke-width="1" opacity="0.5"/>
-          <!-- Crane / lift -->
-          <g stroke="#f5c518" stroke-width="4" fill="none">
-            <rect x="280" y="120" width="80" height="160"/>
-            <line x1="320" y1="120" x2="320" y2="80"/>
-            <line x1="320" y1="80" x2="420" y2="80"/>
-            <line x1="420" y1="80" x2="420" y2="200"/>
-          </g>
-          <!-- Yacht being lifted -->
-          <g>
-            <path d="M380 200 Q420 215 460 200 L450 240 Q420 250 390 240 Z" fill="#ffffff"/>
-            <line x1="420" y1="170" x2="420" y2="200" stroke="#0a1f3d" stroke-width="2"/>
-          </g>
-          <!-- Hardstand boats -->
-          <g>
-            <path d="M260 290 Q300 305 340 290 L335 320 Q300 328 265 320 Z" fill="#ffffff"/>
-            <rect x="295" y="280" width="10" height="14" fill="#0a1f3d"/>
-          </g>
-          <g>
-            <path d="M450 290 Q490 305 530 290 L525 320 Q490 328 455 320 Z" fill="#f5c518"/>
-            <rect x="485" y="280" width="10" height="14" fill="#0a1f3d"/>
-          </g>
-          <!-- Pier / dock -->
-          <rect x="0" y="330" width="600" height="14" fill="#5a4a30"/>
-          <!-- Water -->
-          <path d="M0 344 Q150 360 300 344 T600 344 L600 450 L0 450 Z" fill="#1e3a6e"/>
-          <path d="M0 370 Q150 386 300 370 T600 370 L600 450 L0 450 Z" fill="#142850" opacity="0.6"/>
-          <path d="M0 400 Q150 416 300 400 T600 400 L600 450 L0 450 Z" fill="#0a1f3d"/>
-        </svg>
+        <img src="images/marina.jpg" alt="Coomera Marina aerial view">
         <div class="badge">⚓ Coomera Marina HQ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="split-section">
+  <div class="container">
+    <div class="split">
+      <div class="split-image">
+        <img src="images/workshop.jpg" alt="Pilgrims Revenge workshop">
+        <div class="badge">In the Yard</div>
+      </div>
+      <div class="split-content">
+        <span class="eyebrow">Our Workshop</span>
+        <h2>Modern facility, traditional standards.</h2>
+        <p>Our workshop at Coomera Marina is fully equipped for everything from outboard rebuilds to full superyacht refits. Clean, lit, organised — and run by tradesmen who take pride in keeping it that way.</p>
+        <p>If you'd like to see where your boat will be worked on before you commit, drop in any working day — coffee's on.</p>
+        <a href="contact.html" class="btn btn-ghost">Book a Yard Tour <span class="arrow">→</span></a>
       </div>
     </div>
   </div>
@@ -145,22 +114,22 @@
     </div>
     <div class="process-grid">
       <div class="process-step">
-        <div class="process-num">⚓</div>
+        <div class="process-num">⚓ HONEST</div>
         <h4>Honest Scope</h4>
         <p>We tell you what's actually wrong, what can wait and what can't. No upselling.</p>
       </div>
       <div class="process-step">
-        <div class="process-num">⚙️</div>
+        <div class="process-num">⚙️ SPECIALIST</div>
         <h4>Right Trade, Right Job</h4>
         <p>Engine work goes to engineers. Glass work goes to shipwrights. No generalists.</p>
       </div>
       <div class="process-step">
-        <div class="process-num">📸</div>
+        <div class="process-num">📸 DOCUMENTED</div>
         <h4>Photo Trail</h4>
         <p>Every milestone documented. You see the before, during and after — not just the bill.</p>
       </div>
       <div class="process-step">
-        <div class="process-num">🛡️</div>
+        <div class="process-num">🛡️ WARRANTED</div>
         <h4>Workmanship Warranty</h4>
         <p>12 months on labour, manufacturer cover on parts. We come back if something's not right.</p>
       </div>
@@ -168,14 +137,16 @@
   </div>
 </section>
 
-<section class="cta-section">
+<section class="cta-banner">
   <div class="container">
-    <span class="eyebrow" style="color: var(--yellow);">Come See Us</span>
-    <h2>Drop by the marina, or pick up the phone.</h2>
-    <p>Owners are welcome on-site at Coomera Marina any working day. Or send us your details and we'll come to your berth.</p>
-    <div class="cta-buttons">
-      <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-      <a href="services.html" class="btn btn-outline">Our Services</a>
+    <div class="cta-banner-inner">
+      <span class="eyebrow" style="color: var(--yellow);">Come See Us</span>
+      <h2>Drop by the marina, or pick up the phone.</h2>
+      <p>Owners are welcome on-site at Coomera Marina any working day. Or send us your details and we'll come to your berth.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-yellow">Get In Touch <span class="arrow">→</span></a>
+        <a href="services.html" class="btn btn-on-dark">Our Services</a>
+      </div>
     </div>
   </div>
 </section>
@@ -186,9 +157,10 @@
       <div class="footer-brand">
         <a href="index.html" class="brand">
           <svg class="brand-mark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="30" cy="30" r="28" fill="none" stroke="#f5c518" stroke-width="2"/>
-            <path d="M30 12 L30 48 M22 18 L38 18 M18 38 Q30 50 42 38" stroke="#f5c518" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <circle cx="30" cy="14" r="3" fill="#f5c518"/>
+            <rect width="60" height="60" rx="10" fill="#0b2545"/>
+            <circle cx="30" cy="30" r="22" fill="none" stroke="#ffc933" stroke-width="2.4"/>
+            <path d="M30 14 L30 46 M22 20 L38 20 M19 38 Q30 50 41 38" stroke="#ffc933" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <circle cx="30" cy="15" r="3" fill="#ffc933"/>
           </svg>
           <span class="brand-text">Pilgrims Revenge<small>Premium Boat Services</small></span>
         </a>
