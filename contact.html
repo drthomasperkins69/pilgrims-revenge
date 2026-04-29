@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Pilgrims Revenge Marine</title>
+<meta name="description" content="Request a quote, book a survey or drop in to our base at Coomera Marina. Brisbane &amp; Gold Coast marine services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" fill="none" stroke="#f5c518" stroke-width="2"/>
+        <path d="M30 12 L30 48 M22 18 L38 18 M18 38 Q30 50 42 38" stroke="#f5c518" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <circle cx="30" cy="14" r="3" fill="#f5c518"/>
+      </svg>
+      <span class="brand-text">Pilgrims Revenge<small>Premium Boat Services</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="btn btn-primary" style="padding: 10px 20px;">Request Quote</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="color: var(--yellow);">Get in Touch</span>
+    <h1>Tell us about your boat.</h1>
+    <p>Request a quote, book a survey or just drop in for a chat at Coomera Marina.</p>
+  </div>
+</section>
+
+<section class="contact-section" id="quote">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow">Reach Us</span>
+        <h2 style="margin-bottom: 32px;">Three easy ways.</h2>
+
+        <div class="contact-info-block">
+          <h4>📍 Workshop &amp; HQ</h4>
+          <p><strong>Coomera Marina</strong><br>76 Waterway Drive<br>Coomera, QLD 4209</p>
+        </div>
+
+        <div class="contact-info-block">
+          <h4>📞 Phone</h4>
+          <p><a href="tel:+61755000000" style="color: var(--navy-deep); font-weight: 600;">(07) 5500 0000</a><br>Mon–Fri 7am–5pm · Sat 8am–12pm</p>
+        </div>
+
+        <div class="contact-info-block">
+          <h4>✉️ Email</h4>
+          <p><a href="mailto:hello@pilgrimsrevenge.com.au" style="color: var(--navy-deep); font-weight: 600;">hello@pilgrimsrevenge.com.au</a><br>Same-day response on business days</p>
+        </div>
+
+        <div class="contact-info-block">
+          <h4>⚓ Service Area</h4>
+          <p>Brisbane River · Moreton Bay · Broadwater<br>Gold Coast · Coomera River · Sovereign Islands</p>
+        </div>
+      </div>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <span class="eyebrow">Request a Quote</span>
+        <h3 style="margin-bottom: 24px;">Send us the details.</h3>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="vessel">Vessel Make / Model</label>
+            <input type="text" id="vessel" name="vessel" placeholder="e.g. Riviera 6000 SY">
+          </div>
+          <div class="form-group">
+            <label for="length">Length</label>
+            <input type="text" id="length" name="length" placeholder="e.g. 18m">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Required</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option>Engine Maintenance / Repair</option>
+            <option>Repower</option>
+            <option>Marine Electrical</option>
+            <option>Hull / Structural Repair</option>
+            <option>Antifoul &amp; Slip</option>
+            <option>Project Management / Refit</option>
+            <option>Pre-Purchase Survey</option>
+            <option>Insurance Repair</option>
+            <option>Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell Us About the Job</label>
+          <textarea id="message" name="message" placeholder="What needs doing? When do you need it? Where is the boat now?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Enquiry</button>
+        <p class="form-status" style="display: none; margin-top: 18px; padding: 14px; background: #f0fdf4; border-left: 4px solid #16a34a; color: #166534; border-radius: 3px;"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="brand-mark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="28" fill="none" stroke="#f5c518" stroke-width="2"/>
+            <path d="M30 12 L30 48 M22 18 L38 18 M18 38 Q30 50 42 38" stroke="#f5c518" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <circle cx="30" cy="14" r="3" fill="#f5c518"/>
+          </svg>
+          <span class="brand-text">Pilgrims Revenge<small>Premium Boat Services</small></span>
+        </a>
+        <p>End-to-end marine services for vessels of every size, operating from Coomera Marina across Brisbane and the Gold Coast.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#engine">Engine &amp; Repairs</a></li>
+          <li><a href="services.html#electrical">Marine Electrical</a></li>
+          <li><a href="services.html#structural">Hull &amp; Structural</a></li>
+          <li><a href="services.html#project">Project Management</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#marina">Coomera Marina</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#quote">Request Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Coomera Marina</li>
+          <li>Coomera, QLD 4209</li>
+          <li><a href="tel:+61755000000">(07) 5500 0000</a></li>
+          <li><a href="mailto:hello@pilgrimsrevenge.com.au">hello@pilgrimsrevenge.com.au</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Pilgrims Revenge Marine Pty Ltd. All rights reserved.</div>
+      <div>Brisbane · Gold Coast · Coomera</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
